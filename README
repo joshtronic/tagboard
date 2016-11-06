@@ -1,0 +1,29 @@
+Before the tag board will function, we have to do a few things...
+
+  1. Make sure you have PHP on your server, if not, it won't work
+
+  2. Unpack the .ZIP file to a directory on your server (/tagboard will be fine)
+
+  3. a. If you decide to use a text file, then make sure you change the 
+        permissions on the file to 666 (chmod 666 tagboard)
+
+     b. If you are going to use a MySQL database, you will need to create your 
+        database for the script to work off of:
+
+          create table tagboard
+            (
+              id int(10) not null auto_increment,
+              nick varchar(16) not null,
+              url varchar(128) not null,
+              message varchar(128) not null,
+              datetime varchar(255) not null,
+              ip varchar(15) not null,
+              primary key(id)
+            );
+
+  4. Edit required.php to reflect your  set up, along with the other 
+     customizations
+
+  5. Enjoy your new tag board!
+
+CHEERS!

@@ -1,0 +1,24 @@
+INPUT, IFRAME
+  {
+    border: #000000 1px solid;
+    font-family: Verdana;
+    font-size: 7pt;
+  }
+
+BODY, TD
+  {
+    font-family: Verdana;
+    font-size: 7pt;
+  }
+
+A
+  {
+    color: #666666;
+    text-decoration: none;
+  }
+
+A:hover
+  {
+    color: #000000;
+    text-decoration: underline;
+  }

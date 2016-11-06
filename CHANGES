@@ -1,0 +1,83 @@
+April 16, 2002 - version 0.6.1
+--------------------------------------------------------------------------------
+  Finally eliminated any exploits that allow someone to execute arbitrary code
+  (I think).  Also added an "email detect" that will detect if the user was a
+  dummy and put in their email address instead of a URL, and add "mailto: to the
+  front of it.
+
+April 15, 2002 - version 0.6.0
+--------------------------------------------------------------------------------
+  Recoded the majority of the script.  Optimized the code for speed and to fit 
+  cleancode.org's coding standards.  Also added timestamping.
+
+March 26, 2002 - version 0.5.1
+--------------------------------------------------------------------------------
+  Fixed a security bug that allowed for a user to execute JavaScript from the
+  URL field.
+
+March 14, 2002 - version 0.5.0
+--------------------------------------------------------------------------------
+  Fixed some problems with the code I optimized that killed the ability to use a
+  MySQL database.  This version works with both the flat file, or MySQL, hence 
+  the jump in version number.  Also added a couple more variables to customize
+  the email that is sent when someone posts (if you have that option enabled).
+
+February 25, 2002 - version 0.4.1
+--------------------------------------------------------------------------------
+  Fixed an error that occured when the 'notify by email' option was enabled.
+
+February 23, 2002 - version 0.4.0
+--------------------------------------------------------------------------------
+  Compatibility issues with Mozilla, Netscape and older version of IE have been
+  resolved.  The error messages are now customizable from within the 
+  'required.php' file, and the index page for the tag board is generated 
+  dynamically with the version number, set the max length of each field, and 
+  will post a link for emoticon help if emoticons are enabled.  Quite a bit of 
+  the code has been optimized.  The big feature is the ability to choose either
+  using a MySQL database, or a flat file (./tagboard.dat).  The new flat file 
+  has to have the correct permissions to run correctly (chmod 666), and runs in
+  the same fashion as the MySQL version does.  The only limitation to the flat
+  file is that it posts the entire contents of the file, and doesn't allow you
+  to choose the order (yet).
+
+February 17, 2002 - version 0.3.2
+--------------------------------------------------------------------------------
+  Fixed the problem where the tag board wouldn't refresh itself after a user
+  posts a message.
+
+February 15, 2002 - version 0.3.1
+--------------------------------------------------------------------------------
+  Fixed a security hole allowing the use of server-side includes, as well as 
+  HTML comments, <!-- blah -->.
+
+February 14, 2002 - version 0.3.0
+--------------------------------------------------------------------------------
+  Tweaked out some code, and added emoticons.
+
+January 31, 2002 - version 0.2.0
+--------------------------------------------------------------------------------
+  Added the ability to limit the length of words (to prevent postings such as
+  "wwwwwaaaaaassssssssuuuuupppppp!".  A global variable has been added to 
+  determine what character will be used to seperate the name and the message, 
+  for easy customization.  The flood protection is not optional, in case you 
+  want to turn it off.  You can now specify the max length of the nick and the
+  message.  Please note, if you go over the recommended max, without updating 
+  the database, then your messages will be cut off.  The final update is the
+  addition of an HTML filter, to prohibit people from posting HTML to the tag
+  board, this will keep the kids from posting <H1> text, and screwing everything
+  up.
+
+January 28, 2002 - version 0.1.1
+--------------------------------------------------------------------------------
+  Added the option to display the posts in ascending or descending order, based
+  on when it was posted.
+
+December 13, 2001 - version 0.1.0
+--------------------------------------------------------------------------------
+  All cusomizable variables added to required.php for easy cusomization.  Better 
+  flood protection added by not letting the same IP post twice, and the addition 
+  of an optional keyword (profanity) checker.
+
+December 12, 2001 - version 0.0.2
+--------------------------------------------------------------------------------
+  Initial release.
